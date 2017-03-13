@@ -1,0 +1,20 @@
+<% startTime = Time.new %>
+
+<div class="game">
+  <% @grid.each do |letter| %>
+    <div class="letter">
+      <%= letter[0]%>
+    </div>
+  <% end %>
+
+  <div class="answer">
+    <form action=<%= score_path %> method="get">
+      <input type="hidden" name="time" value="<%= startTime %>">
+      <input type="hidden" name="grid" value=<%= @grid.join("") %>>
+      <input type="text" name="answer" class="answer-bar">
+      <input type="submit" class="btn-submit">
+    </form>
+  </div>
+</div>
+
+

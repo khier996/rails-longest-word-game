@@ -1,0 +1,58 @@
+// Place all the styles related to the playing controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background-color: #d6c695;
+}
+
+.letter {
+  float: left;
+  width: 30px;
+  height: 30px;
+  background-color: grey;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.game {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.answer-bar {
+  position: relative;
+  top: 20px;
+}
+
+.btn-submit {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  background-color: #6dcea6;
+  border-radius: 2px;
+  width: 100px;
+}
+
+.result {
+  width: 400px;
+  height: 350px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding-left: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px 5px grey, inset 1px 1px 10px 3px grey;
+}
+
+.btn-play {
+  display: inline-block;
+  padding: 10px;
+  background-color: #66ba97;
+  text-decoration: none;
+}
